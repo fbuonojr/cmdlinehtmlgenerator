@@ -4,6 +4,7 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+//this function asks the user questions to store data for HTML page
 function promptUser() {
     return inquirer.prompt([
         {
@@ -37,4 +38,9 @@ function promptUser() {
             message: "Enter your LinkedIn URL."
           }
     ]);
+}
+
+//this function takes the users input and generates the html page
+function generateHTML(answers){
+    
 }
