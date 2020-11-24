@@ -65,3 +65,15 @@ function generateHTML(answers) {
     </body>
     </html>`;
 }
+
+//this function starts the application
+async function init(){
+    try{
+        const answers = await promptUser();
+        const html = generateHTML(answers);
+        await writeFileAsync("index.html", html);
+        console.log("successfully wrote to html file");
+    } catch(err){
+        console.log(err);
+    }
+}
