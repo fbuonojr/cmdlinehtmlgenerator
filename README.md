@@ -1,13 +1,9 @@
-# Project Name
+# Command Line HTML Profile Generator
 
-#### Technologies used: 
+#### Technologies used: JavaScript, Express
 
-This application does . . . . .
+This application does takes input from the prompt and creates a profile page for the user
 
-How to use
-
-* link to deployed application:
-
-![](./images/)
+How to use: run "npm i inquirer" to download inquirer, then "node index" to start the application
 
 ###### Frank Buono- this app was created as practice using an activity from my bootcamp class
